@@ -1,6 +1,6 @@
 {
   "name": "@enspirit/dem-core-rescript",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Core library of doc-e-mate in ReScript",
   "main": "src/app.bs.js",
   "homepage": "https://github.com/enspirit/dem-core-rescript#readme",
