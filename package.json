@@ -1,0 +1,46 @@
+{
+  "name": "@enspirit/dem-core-rescript",
+  "version": "0.1.0",
+  "description": "Core library of doc-e-mate in ReScript",
+  "main": "src/app.bs.js",
+  "homepage": "https://github.com/enspirit/dem-core-rescript#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enspirit/dem-core-rescript.git"
+  },
+  "author": "ygu",
+  "license": "ISC",
+  "keywords": [
+    "rescript",
+    "markdown",
+    "mustache",
+    "doc-e-mate"
+  ],
+  "scripts": {
+    "prepare": "npm run re:build",
+    "re:build": "rescript",
+    "re:start": "rescript build -w",
+    "re:clean": "rescript clean",
+    "test": "jest",
+    "testw": "jest --watch"
+  },
+  "devDependencies": {
+    "rescript": "^9.1.4",
+    "@glennsl/bs-jest": "^0.4.9",
+    "jest": "^24.8.0"
+  },
+  "jest": {
+    "testURL": "http://localhost/"
+  },
+  "dependencies": {
+    "@enspirit/rescript-chokidar": "^1.0.0",
+    "@enspirit/rescript-execa": "^1.0.0",
+    "@enspirit/rescript-markdown-it": "^1.0.2",
+    "@enspirit/rescript-mustache": "^1.0.1",
+    "@enspirit/rescript-node-sass": "^1.0.0",
+    "@enspirit/rescript-prettier": "^1.0.0",
+    "bs-yaml": "^1.0.2",
+    "bucklescript": "0.0.2",
+    "npm": "^6.13.2"
+  }
+}
