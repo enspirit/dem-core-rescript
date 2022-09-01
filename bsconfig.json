@@ -17,15 +17,11 @@
   },
   "suffix": ".bs.js",
   "bs-dependencies": [
-    "bs-yaml",
     "@enspirit/rescript-mustache",
     "@enspirit/rescript-markdown-it",
-    "@enspirit/rescript-prettier",
-    "@enspirit/rescript-execa",
-    "@enspirit/rescript-chokidar",
-    "@enspirit/rescript-node-sass"
+    "@enspirit/rescript-prettier"
   ],
-  "bs-dev-dependencies": ["@glennsl/bs-jest"],
+  "bs-dev-dependencies": ["@glennsl/bs-jest", "bs-yaml"],
   "warnings": {
     "error" : "+101"
   },

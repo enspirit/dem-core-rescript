@@ -27,19 +27,16 @@
   "devDependencies": {
     "rescript": "^9.1.4",
     "@glennsl/bs-jest": "^0.4.9",
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "bs-yaml": "^1.0.2"
   },
   "jest": {
     "testURL": "http://localhost/"
   },
   "dependencies": {
-    "@enspirit/rescript-chokidar": "^2.0.0",
-    "@enspirit/rescript-execa": "^2.0.0",
     "@enspirit/rescript-markdown-it": "^2.0.0",
     "@enspirit/rescript-mustache": "^2.0.0",
-    "@enspirit/rescript-node-sass": "^2.0.0",
-    "@enspirit/rescript-prettier": "^2.0.0",
-    "bs-yaml": "^1.0.2"
+    "@enspirit/rescript-prettier": "^2.0.0"
   },
   "publishConfig": {
     "access": "public"
