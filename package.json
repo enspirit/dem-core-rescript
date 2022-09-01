@@ -33,15 +33,13 @@
     "testURL": "http://localhost/"
   },
   "dependencies": {
-    "@enspirit/rescript-chokidar": "^1.0.0",
-    "@enspirit/rescript-execa": "^1.0.0",
-    "@enspirit/rescript-markdown-it": "^1.0.2",
-    "@enspirit/rescript-mustache": "^1.0.1",
-    "@enspirit/rescript-node-sass": "^1.0.0",
-    "@enspirit/rescript-prettier": "^1.0.0",
-    "bs-yaml": "^1.0.2",
-    "bucklescript": "0.0.2",
-    "npm": "^6.13.2"
+    "@enspirit/rescript-chokidar": "^2.0.0",
+    "@enspirit/rescript-execa": "^2.0.0",
+    "@enspirit/rescript-markdown-it": "^2.0.0",
+    "@enspirit/rescript-mustache": "^2.0.0",
+    "@enspirit/rescript-node-sass": "^2.0.0",
+    "@enspirit/rescript-prettier": "^2.0.0",
+    "bs-yaml": "^1.0.2"
   },
   "publishConfig": {
     "access": "public"
