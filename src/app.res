@@ -34,12 +34,17 @@ let partials_dependencies = text => {
   let partial_balises = Js.String.match_(%re("/{{> .*}}/g"), text)
   switch partial_balises {
   | None => list{}
-  | Some(a) => List.map(s =>
-      switch Js.String.match_(%re("/{{> (.*)}}/"), s) {
-      | Some([_, name]) => list{name} // extract the partial name itself
+  | Some(a) => List.map(s_opt =>
+    switch s_opt {
+    | None => list{}
+    | Some(s) => switch Js.String.match_(%re("/{{> (.*)}}/"), s) {
+      | Some([_, name_opt]) => switch name_opt {
+        | None => list{}
+        | Some(name) => list{name} // extract the partial name itself
+        }
       | _ => list{}
       }
-    , Array.to_list(a)) |> List.flatten
+    }, Array.to_list(a)) |> List.flatten
   }
 }
 
@@ -52,7 +57,10 @@ let with_semantics_tags = text => {
   let html_title_tag_level = s =>
     switch Js.String.match_(%re("/<h([1-9])>/"), s) {
     | None => 0
-    | Some(a) => int_of_string(a[1])
+    | Some(a) => switch a[1] {
+      | None => 0
+      | Some(s) => int_of_string(s)
+      }
     }
 
   let tag = (~id=None, level) => {

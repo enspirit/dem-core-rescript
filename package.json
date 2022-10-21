@@ -25,7 +25,7 @@
     "testw": "jest --watch"
   },
   "devDependencies": {
-    "rescript": "^9.1.4",
+    "rescript": "^10.0.1",
     "@glennsl/bs-jest": "^0.4.9",
     "jest": "^24.8.0",
     "bs-yaml": "^1.0.2"

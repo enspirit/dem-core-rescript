@@ -8,7 +8,7 @@ let remove_punctuation = s =>
 let to_html_id = s =>
   s->remove_accents
   |> remove_punctuation
-  |> String.lowercase
+  |> Js.String.toLowerCase
   |> Js.String.replaceByRe(%re("/[\ \-]+/g"), "-") // replace spaces by a hyphen
 
 let format = s => Prettier.format(s, {"parser": "html"})
