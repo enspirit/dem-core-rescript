@@ -85,6 +85,10 @@ You can run the tests in watch mode using:
 npm run testw
 ```
 
+### Next dev steps
+- Add "angular filters" like in the dem input language.
+- ...
+
  ## Publishing
 
  All the releases were published using `np` so far. Cf.
